@@ -1,0 +1,4 @@
+vendors:
+  - id: example-vendor
+    name: Example Vendor
+    role: support

@@ -1,0 +1,5 @@
+networks:
+  - id: management
+    cidr: 192.0.2.0/24
+    gateway: 192.0.2.1
+    usage: management

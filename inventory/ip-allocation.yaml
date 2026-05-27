@@ -1,0 +1,4 @@
+ip_allocation:
+  - ip: 192.0.2.10
+    name: example-host
+    role: management

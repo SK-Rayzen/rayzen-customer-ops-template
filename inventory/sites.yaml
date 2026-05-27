@@ -1,0 +1,4 @@
+sites:
+  - id: main
+    name: Main Site
+    role: primary

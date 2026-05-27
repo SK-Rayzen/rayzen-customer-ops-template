@@ -1,0 +1,5 @@
+software:
+  - name: Example Software
+    version: "1.0"
+    installed_on:
+      - example-host

@@ -1,0 +1,8 @@
+schedules:
+  - name: example-nightly-backup
+    description: Example nightly backup job
+    schedule: "0 1 * * *"
+    type: backup
+    runner: python scripts/collect/backup_all.py
+    notes:
+      - replace with customer-specific backup logic

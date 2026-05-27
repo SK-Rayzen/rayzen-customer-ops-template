@@ -1,0 +1,6 @@
+circuits:
+  - id: primary-wan
+    name: Primary WAN
+    network: 203.0.113.0/30
+    notes:
+      - example only

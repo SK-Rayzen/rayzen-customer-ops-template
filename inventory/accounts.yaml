@@ -1,0 +1,5 @@
+accounts:
+  - system: example-system
+    username: admin
+    role: administrator
+    secret_ref: credentials://example/system/admin

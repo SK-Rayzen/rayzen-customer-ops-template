@@ -1,0 +1,6 @@
+customer:
+  id: example-customer
+  name: Example Customer
+  status: active
+  notes:
+    - replace with real customer data

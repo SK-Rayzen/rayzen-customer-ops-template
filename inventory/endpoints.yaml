@@ -1,0 +1,5 @@
+endpoints:
+  - id: example-endpoint
+    type: workstation
+    name: Example Endpoint
+    ip: 192.0.2.100
