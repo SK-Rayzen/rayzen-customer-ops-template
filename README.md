@@ -80,7 +80,7 @@ A typical customer repository based on this template may be used like this:
 3. Write customer-specific SOPs and runbooks under `docs/`
 4. Track operational notes, incidents, and maintenance history under `worklog/`
 5. Keep future tasks and decisions under `todo/` or a similar planning area
-6. Define AI agent instructions in `CODEX.md`, `CLAUDE.md`, or equivalent agent entry files
+6. Define AI agent instructions in `AGENTS.md` or equivalent agent entry files
 7. Use Git commits and pull requests to keep changes reviewable
 8. Gradually connect the repo with automation, monitoring, ticketing, or internal tools
 
@@ -93,11 +93,10 @@ This template assumes that different AI coding / operations agents may need diff
 Recommended entry points:
 
 1. `README.md` - General overview for humans and agents
-2. `CODEX.md` - Operating rules and context for Codex-style agents
-3. `CLAUDE.md` - Operating rules and context for Claude-style agents
-4. `inventory/` - Structured facts about the customer environment
-5. `docs/` - SOPs, runbooks, architecture notes, and project documentation
-6. `worklog/` - Operational history and maintenance records
+2. `AGENTS.md` - Shared operating rules and context for AI agents
+3. `inventory/` - Structured facts about the customer environment
+4. `docs/` - SOPs, runbooks, architecture notes, and project documentation
+5. `worklog/` - Operational history and maintenance records
 
 The key idea is simple:
 
@@ -115,8 +114,7 @@ The key idea is simple:
 | `todo/` | Pending tasks, follow-up items, blockers, and decisions |
 | `automation/` | Schedules, scripts, checks, or agent-readable automation definitions |
 | `secrets/` | Placeholder location for secret-management notes or transitional local practice; do not use this in a public repo |
-| `CODEX.md` | Agent instructions for Codex-style workflows |
-| `CLAUDE.md` | Agent instructions for Claude-style workflows |
+| `AGENTS.md` | Shared agent instructions for AI-assisted workflows |
 
 ---
 
