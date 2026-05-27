@@ -79,10 +79,11 @@ A typical customer repository based on this template may be used like this:
 2. Fill in customer infrastructure facts under `inventory/`
 3. Write customer-specific SOPs and runbooks under `docs/`
 4. Track operational notes, incidents, and maintenance history under `worklog/`
-5. Keep future tasks and decisions under `todo/` or a similar planning area
-6. Define AI agent instructions in `AGENTS.md` or equivalent agent entry files
-7. Use Git commits and pull requests to keep changes reviewable
-8. Gradually connect the repo with automation, monitoring, ticketing, or internal tools
+5. Track repo structure, documentation, and inventory refactoring under `changelog.md`
+6. Keep future tasks and decisions under `todo/` or a similar planning area
+7. Define AI agent instructions in `AGENTS.md` or equivalent agent entry files
+8. Use Git commits and pull requests to keep changes reviewable
+9. Gradually connect the repo with automation, monitoring, ticketing, or internal tools
 
 ---
 
@@ -97,6 +98,7 @@ Recommended entry points:
 3. `inventory/` - Structured facts about the customer environment
 4. `docs/` - SOPs, runbooks, architecture notes, and project documentation
 5. `worklog/` - Operational history and maintenance records
+6. `changelog.md` - Repo/documentation/inventory change history
 
 The key idea is simple:
 
@@ -110,7 +112,8 @@ The key idea is simple:
 |---|---|
 | `inventory/` | Structured facts such as customer profile, devices, networks, systems, IP ranges, accounts, and services |
 | `docs/` | SOPs, runbooks, architecture notes, project documentation, and decision records |
-| `worklog/` | Maintenance logs, incident notes, change history, and field work records |
+| `worklog/` | Customer-facing maintenance logs, incident notes, and field work records |
+| `changelog.md` | Repo structure changes, documentation refactoring, and inventory normalization history |
 | `todo/` | Pending tasks, follow-up items, blockers, and decisions |
 | `automation/` | Schedules, scripts, checks, or agent-readable automation definitions |
 | `secrets/` | Placeholder location for secret-management notes or transitional local practice; do not use this in a public repo |
@@ -170,6 +173,27 @@ This template may be useful for:
 - Network / server / Wi-Fi engineers
 - Teams experimenting with AI-assisted operations
 - Organizations that want to move away from scattered Excel-based maintenance records
+
+---
+
+## Worklog vs changelog
+
+Repositories based on this template should keep these two histories separate:
+
+- `worklog/`
+  - customer-facing operational history
+  - maintenance visits
+  - incidents
+  - service changes
+  - troubleshooting outcomes
+- `changelog.md`
+  - repo structure changes
+  - documentation cleanup
+  - inventory normalization
+  - AI/context-entry refactoring
+  - non-customer-facing repository maintenance
+
+This separation keeps customer history readable while still preserving the repository's internal evolution.
 
 ---
 

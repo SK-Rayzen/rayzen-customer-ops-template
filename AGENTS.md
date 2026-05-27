@@ -38,6 +38,7 @@ The goal is to let human engineers and AI agents collaborate on a customer envir
 - `inventory/` contains structured facts
 - `docs/` contains SOPs, runbooks, architecture notes, and project documentation
 - `worklog/` contains maintenance history and operational notes
+- `changelog.md` contains repo/documentation/inventory change history
 - `todo/` contains pending work and decisions
 - `automation/` contains schedules and automation-related definitions
 - `secrets/` is a placeholder for private customer repos and should not contain real secrets in a public template repo
@@ -97,3 +98,20 @@ A real customer repo may extend this file with:
 - model-specific notes if absolutely necessary
 
 But the base structure should remain shared across customers whenever possible.
+
+---
+
+## 8. Worklog vs changelog
+
+- `worklog/` is for customer-facing operational history:
+  - maintenance work
+  - incidents
+  - on-site findings
+  - actions performed for the customer environment
+- `changelog.md` is for repository-facing history:
+  - repo structure changes
+  - document refactoring
+  - inventory normalization
+  - AI/context-file restructuring
+
+Agents should avoid mixing these two. If the change is about the repository itself rather than the customer environment, record it in `changelog.md`, not `worklog/`.
